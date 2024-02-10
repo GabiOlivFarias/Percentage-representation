@@ -6,9 +6,11 @@
         Calculando o percentual de representação
       </h1>
     </div>
-    <ResultsView />
+    <PercentageView />
   </div>
 </template>
 
 <script setup>
+import PercentageView from './composable/PercentageView.vue'
+
 </script>
