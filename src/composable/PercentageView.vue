@@ -9,7 +9,7 @@
         <RjButton @click="handleButtonClick('Rio de Janeiro')" />
         <MgButton @click="handleButtonClick('Minas Gerais')" />
         <EsButton @click="handleButtonClick('Espírito Santo')" />
-        <OthersButton @click="handleButtonClick('Outros Estados')" />
+        <OthersButton @click="handleButtonClick('Outros')" />
       </div>
       <div class="flex flex-row justify-center items-center font-medium text-2xl p-4">
         <h3>{{ resultMessage }}</h3>
@@ -41,8 +41,8 @@
     const selectedState = data.find(item => item.estado === button)
 
     if (selectedState) {
-      resultMessage.value = `${selectedState.estado} tem um valor de R$ ${selectedState.valor.toFixed(2)}
-      de um total de R$ ${totalValue.value.toFixed(2)}`
+      const percentage = (selectedState.valor / totalValue.value) * 100
+      resultMessage.value = `${selectedState.estado} tem um valor de R$ ${selectedState.valor.toFixed(2)} do total de R$ ${totalValue.value.toFixed(2)}`
     }
   }
 </script>
