@@ -5,7 +5,7 @@
     </div>
     <div class="flex flex-col items-center p-2">
       <h1 class="font-bold text-3xl flex justify-center pt-4 mb-16">
-        Estados participantes:
+        {{ $t('subtittle') }}
       </h1>
       <div class="flex flex-row justify-center items-center p-2">
         <SpButton @click="handleButtonClick('São Paulo')" />

@@ -1,0 +1,10 @@
+{
+  "tittle": "Calculando o percentual de representação",
+  "subtittle": "Estados participantes:",
+  "inputs": {
+    "reverse": "Frase revertida:"
+  },
+  "buttons": {
+    "reverse": "Reverter"
+  }
+}
