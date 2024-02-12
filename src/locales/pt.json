@@ -1,10 +1,11 @@
 {
   "tittle": "Calculando o percentual de representação",
   "subtittle": "Estados participantes:",
-  "inputs": {
-    "reverse": "Frase revertida:"
-  },
   "buttons": {
-    "reverse": "Reverter"
+    "sp": "São Paulo",
+    "rj": "Rio de Janeiro",
+    "mg": "Minas Gerais",
+    "es": "Espírito Santo",
+    "others": "Outros"
   }
 }

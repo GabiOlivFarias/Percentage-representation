@@ -1,7 +1,7 @@
 <template>
     <button class="font-medium text-button text-white bg-tertiary p-4 m-3 rounded-md hover:drop-shadow-red-1">
       <h3>
-        Outros
+        {{ $t('buttons.others') }}
       </h3>
     </button>
 </template>

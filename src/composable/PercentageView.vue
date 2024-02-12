@@ -1,25 +1,26 @@
 <template>
-  <div class="h-96 w-auto bg-light-red border-4 border-solid border-secundary rounded-md flex justify-center">
-    <div class="bg-light-red flex justify-center p-4">
-      <PizzaGraphic :data="chartData" />
-    </div>
-    <div class="flex flex-col items-center p-2">
-      <h1 class="font-bold text-3xl flex justify-center pt-4 mb-16">
+  <div class="md:m-8 min-h-screen md:min-w-full bg-light-red md:border-4 md:border-solid md:border-secundary rounded-md md:p-7 flex flex-col justify-center items-center">
+    <div class="md:pb-12 pb-6">
+      <h1 class="font-bold text-2xl md:text-4xl flex justify-center pt-4 mb-8">
         {{ $t('subtittle') }}
       </h1>
-      <div class="flex flex-row justify-center items-center p-2">
+
+      <div class="flex flex-col md:flex-row justify-center items-center p-2 md:space-x-4">
         <SpButton @click="handleButtonClick('São Paulo')" />
         <RjButton @click="handleButtonClick('Rio de Janeiro')" />
         <MgButton @click="handleButtonClick('Minas Gerais')" />
         <EsButton @click="handleButtonClick('Espírito Santo')" />
         <OthersButton @click="handleButtonClick('Outros')" />
       </div>
-      <div class="flex flex-row justify-center items-center font-medium text-2xl p-4">
-        <h3>{{ resultMessage }}</h3>
+      
+      <div class="flex flex-col items-center p-2">
+        <h3 class="font-medium text-xl">{{ resultMessage }}</h3>
+        <h3 class="font-medium text-xl">{{ percentage }}</h3>
       </div>
-      <div class="flex flex-row justify-center items-center font-medium text-2xl p-4">
-        <h3>{{ percentage }}</h3>
-      </div>
+    </div>
+
+    <div class="bg-light-red flex justify-center md:p-4">
+      <PizzaGraphic :data="chartData" />
     </div>
   </div>
 </template>

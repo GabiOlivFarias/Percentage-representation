@@ -28,7 +28,7 @@
             datasets: [{
               label: 'Percentage',
               data: this.data.map(item => item.percentage.toFixed(2)),
-              backgroundColor: [
+                            backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(104,0,0,1)',
                 'rgba(177,17,22,1)',
